@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.background {
+  background: radial-gradient(#233cb4, black);
+  height: 338px;
+}
+#id {
+  position: absolute;
+  background: black;
+  z-index: 2;
+  font-size: 20px;
+  display: flex;
+  width: 200px;
+  padding: 5px 10px;
+  border-radius: 28px;
+  top: 10px;
+  right: 5px;
+}
+p {
+  color: #fff;
+}
+.fa-twitter {
+  z-index: 100;
+  position: absolute;
+  color: #007dff;
+  font-size: 25px !important;
+  right: 10px;
+}
+.rounds1 {
+  height: 200px;
+  width: 330px;
+  background: deeppink;
+  border-radius: 50%;
+  position: absolute;
+  top: -100px;
+}
+.rounds2 {
+  border-top-right-radius: 250px;
+  height: 130px;
+  width: 300px;
+  background: #75acff;
+  border-top-left-radius: 250px;
+  position: relative;
+  right: 300px;
+  left: 40%;
+  top: 61.6%;
+}
+.rounds3 {
+  height: 100px;
+  width: 100px;
+  background: #fbff14;
+  border-bottom-left-radius: 100px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.human {
+  position: absolute;
+  top: -9px;
+  left: 52vw;
+  transform: rotate(4deg);
+}
+.shield {
+  left: 7px;
+  position: absolute;
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  top: 10px;
+  background: #ffffff3b;
+  border: 2px solid #3728b791;
+}
+.shield::after {
+  content: "";
+  height: 4px;
+  position: absolute;
+  width: 42px;
+  left: 34px;
+  top: 107px;
+  border-radius: 11px;
+  background: white;
+}
+.head {
+  left: 20px;
+  transform: rotateZ(-89deg);
+  height: 78px;
+  top: 32%;
+  width: 73px;
+  background: #ffe9d0;
+  position: absolute;
+  border-radius: 64% 43% 43% 52% / 47% 49% 86% 57%;
+}
+.hair::before {
+  top: 30px;
+  content: "";
+  position: absolute;
+  background: linear-gradient(-14deg, #7b2e0a, #dc6030);
+  height: 30px;
+  width: 87px;
+  left: 11px;
+  border-top-right-radius: 30px;
+  z-index: 2;
+  transform: rotateZ(5deg);
+  border-bottom-left-radius: 23px;
+}
+.eye1 {
+  top: 20px;
+  position: absolute;
+  height: 10px;
+  right: 27px;
+  width: 10px;
+  background: black;
+  border-radius: 50%;
+}
+.eye2 {
+  top: 50px;
+  position: absolute;
+  height: 10px;
+  right: 30px;
+  width: 10px;
+  background: black;
+  border-radius: 50%;
+}
+.eye1::before {
+  content: "";
+  background: white;
+  position: absolute;
+  height: 70%;
+  width: 70%;
+  border-radius: 18px;
+  left: 0.3px;
+  top: 0px;
+}
+.eye2::before {
+  content: "";
+  background: white;
+  position: absolute;
+  height: 70%;
+  width: 70%;
+  border-radius: 18px;
+  left: 0px;
+  top: 0px;
+}
+.mouth {
+  transform: rotateZ(95deg);
+  font-size: 25px;
+  position: absolute;
+  top: 21px;
+}
+.mid-body {
+  position: absolute;
+  height: 120px;
+  width: 85px;
+  background: black;
+  border-radius: 30px;
+  top: 123px;
+  left: 20px;
+}
+.hand1 {
+  height: 90px;
+  width: 20px;
+  background: black;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  position: absolute;
+  top: 120px;
+  left: 110px;
+  transform: rotateZ(-6deg);
+}
+.hand1::before {
+  border-radius: 20px;
+  content: "";
+  background: black;
+  height: 20px;
+  width: 41px;
+  position: absolute;
+  left: -29px;
+  top: 0;
+}
+.hand2 {
+  height: 90px;
+  width: 20px;
+  background: black;
+  position: absolute;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  top: 120px;
+  left: -2.5px;
+  transform: rotateZ(6deg);
+}
+.hand2::before {
+  border-radius: 20px;
+  content: "";
+  background: black;
+  height: 20px;
+  width: 41px;
+  position: absolute;
+  left: 10px;
+  top: 0;
+}
+.leg1 {
+  height: 70px;
+  width: 20px;
+  background: black;
+  border-radius: 20px;
+  position: absolute;
+  top: 213px;
+  left: 3px;
+  transform: rotateZ(47deg);
+}
+.leg2 {
+  height: 70px;
+  width: 20px;
+  background: black;
+  border-radius: 20px;
+  position: absolute;
+  top: 213px;
+  left: 58px;
+  transform: rotateZ(47deg);
+}
+.screen {
+  background: #252424;
+  height: 80px;
+  width: 85px;
+  z-index: 2;
+  position: relative;
+  top: 100px;
+  left: 41%;
+  border-radius: 5px;
+  transform: rotate3d(3, -4, 1, 9deg) skewX(-4deg) skewY(21deg);
+}
+.base {
+  background: #63533e;
+  height: 44px;
+  width: 108px;
+  position: relative;
+  top: 58px;
+  left: 43%;
+  transform: skew(-51deg, 3deg) rotateZ(194deg);
+  border-radius: 5px;
+  box-shadow: -7px -3px 2px 1px black;
+}
+.base::after {
+  content: "";
+  position: absolute;
+  background: black;
+  height: 29px;
+  z-index: 2;
+  top: 2px;
+  width: 94px;
+  left: 16px;
+  border-radius: 4px;
+}
+.base::before {
+  left: 42px;
+  content: "";
+  background: #423535;
+  position: absolute;
+  height: 8px;
+  width: 24px;
+  top: 34px;
+  border-radius: 2px;
+}
+.top {
+  top: 106px;
+  height: 0;
+  width: 0;
+  position: absolute;
+  right: 154px;
+  z-index: 2;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid red;
+  transform: rotateZ(-45deg);
+}
+.mid {
+  height: 50px;
+  width: 23px;
+  background: black;
+  position: absolute;
+  top: 112px;
+  right: 134px;
+  z-index: 1;
+  transform: rotateZ(-45deg);
+}
+.mid::before {
+  content: "";
+  position: absolute;
+  height: 14px;
+  left: 4px;
+  width: 14px;
+  top: 7px;
+  border: 1px solid #3f4a3e;
+  border-radius: 50%;
+}
+.mid::after {
+  content: "";
+  position: absolute;
+  height: 33px;
+  top: 62px;
+  right: 46%;
+  border-radius: 8px;
+  box-shadow: 1px 0px 13px 11px red;
+}
+.l-side {
+  height: 0;
+  width: 0;
+  border-bottom: 10px solid red;
+  border-left: 10px solid transparent;
+  position: absolute;
+  top: 154px;
+  right: 142px;
+  transform: rotateZ(-45deg);
+}
+.r-side {
+  height: 0;
+  width: 0;
+  border-bottom: 10px solid red;
+  border-left: 10px solid transparent;
+  position: absolute;
+  top: 130px;
+  right: 119px;
+  transform: rotateZ(45deg);
+}
+.star {
+  transform: rotateZ(45deg);
+  height: 86px;
+  position: absolute;
+  width: 1px;
+  z-index: 2;
+  background: white;
+}
+.star1 {
+  position: absolute;
+  left: 300px;
+}
+.star2 {
+  position: absolute;
+  top: 150px;
+  right: 350px;
+}
+.star3 {
+  position: absolute;
+  left: 410px;
+  bottom: 350px;
+}
+.star4 {
+  position: absolute;
+  left: 600px;
+  top: 90px;
+}
+.star5 {
+  position: absolute;
+  right: 110px;
+  top: 40px;
+}
+.star6 {
+  position: absolute;
+  left: 90px;
+  top: 205px;
+}
+.star7 {
+  position: absolute;
+  left: 500px;
+  top: -24px;
+}
+.star8 {
+  position: absolute;
+  right: 40px;
+  top: 188px;
+}
+.star9 {
+  position: absolute;
+  left: 53px;
+  top: 0;
+}
